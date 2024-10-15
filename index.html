@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <title>Minesweeper Game</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Minesweeper Game</h1>
-    <div id="gameBoard"></div>
+    <div id="gameBoard" style="display: grid; grid-template-columns: repeat(5, 40px); grid-gap: 2px;"></div>
     <div id="status"></div>
-    <button id="resetButton">Reset Game</button>
-    <script src="script.js"></script>
+    <button id="resetButton" onclick="resetGame()">Reset Game</button>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
+
